@@ -3,6 +3,35 @@
     /*Al poner margin da los 10 pixeles de margen por todos los lados*/
     margin: 10px;
     height: 100vh; /*View port height*/
+    overflow: auto;
+    padding: 10px;
 
     background-color: rgb(252, 202, 126);
+}
+
+.divCabecera {
+    margin: 5px;
+    height: 100px;
+
+    background-color: #67bbf0;
+}
+
+.divPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Fracción o 1 parte del todo el que está contenido*/
+
+    margin: 5px;
+    height: 100%;
+    
+    
+    background-color: #eee9db;
+}
+
+.zonaNavegacion {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    background-color: #3e83c4;
 }
