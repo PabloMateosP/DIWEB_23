@@ -1,4 +1,9 @@
 /*Creamos los estilos de nuestra página */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     /*Al poner margin da los 10 pixeles de margen por todos los lados*/
     margin: 10px;
@@ -30,8 +35,39 @@
 .zonaNavegacion {
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;
+
+    background-color: #3e83c4;
+}
+
+.zonaNavegacion div {
+    width: 1fr;
+    min-height: 50px;
+    height: auto;
+    margin: 5px;
+    padding-left: 5px;
+    
+    border-radius: 6px;
+
+    background-color:rgb(250, 216, 165);
+}
+
+.zonaNavegacion div:hover {
+    
+    background-color:rgb(253, 191, 99);
+
+}
+
+.zonaContenido {
+    grid-column: 2 / 5;
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 
     background-color: #3e83c4;
 }
