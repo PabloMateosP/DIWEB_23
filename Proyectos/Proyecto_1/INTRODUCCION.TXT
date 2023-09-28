@@ -1,0 +1,9 @@
+Debemos de crear una página con:
+- Una cabecera arriba 
+- Una zona de navegación lateral en la zona izquierda con varios elementos
+    - Resumen --> Si clicamos en cada una debe de salir la información de cada una 
+    - Colores
+    - Tipografía
+    - Iconografía
+- Zona principal o zona de contenido, donde guardaremos toda la información.
+    - Dentro de landing page debemos de poner una serie de preguntas dadas

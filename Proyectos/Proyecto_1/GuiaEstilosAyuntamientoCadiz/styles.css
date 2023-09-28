@@ -1,0 +1,8 @@
+/*Creamos los estilos de nuestra página */
+.container {
+    /*Al poner margin da los 10 pixeles de margen por todos los lados*/
+    margin: 10px;
+    height: 100vh; /*View port height*/
+
+    background-color: rgb(252, 202, 126);
+}
