@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(245, 245, 194);
+}
+
+.gridContainer {
+    height: 100vh; /*Para ver algo en la pantalla*/
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 50px auto;
+
+    gap: 10px;
+
+    background-color: rgb(172, 167, 141);
+
+}
+
+#zonaLogo  {
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+    background-color:rgb(245, 245, 194);
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#zonaTitulo{
+    grid-column: 5/10;
+    grid-row: 1;
+
+    background-color: rgb(245, 245, 194);
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#inicio{
+    grid-column: 2/4;
+    grid-row: 2;
+
+    background-color: rgb(245, 245, 194);
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#servicios{
+    grid-column: 6/8;
+    grid-row: 2;
+
+    background-color: rgb(245, 245, 194);
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#contacto{
+    grid-column: 10/12;
+    grid-row: 2;
+
+    background-color: rgb(245, 245, 194);
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#zonaContenido{
+    grid-column: 2/12;
+    grid-row: 3;
+
+    background-color: bisque;
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
