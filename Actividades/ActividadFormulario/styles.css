@@ -7,7 +7,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20% 50px auto;
+    grid-template-rows: 15% 50px auto;
 
     gap: 10px;
 
@@ -30,6 +30,7 @@ body {
 #zonaTitulo{
     grid-column: 5/10;
     grid-row: 1;
+    text-align: center;
 
     background-color: rgb(245, 245, 194);
     border-radius: 6px;
@@ -39,41 +40,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-#inicio{
-    grid-column: 2/4;
-    grid-row: 2;
 
-    background-color: rgb(245, 245, 194);
-    border-radius: 6px;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-#servicios{
-    grid-column: 6/8;
-    grid-row: 2;
-
-    background-color: rgb(245, 245, 194);
-    border-radius: 6px;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-#contacto{
-    grid-column: 10/12;
-    grid-row: 2;
-
-    background-color: rgb(245, 245, 194);
-    border-radius: 6px;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-}
 
 #zonaContenido{
     grid-column: 2/12;
@@ -85,4 +52,30 @@ body {
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+}
+
+#zonaNavegacion{
+    grid-column: 2/12;
+    grid-row: 2;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+
+    background-color: bisque;
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.divFormulario {
+    
+    margin-left: 20%;
+    height: 100%;
+    padding-top: 10px;
+
+    background-color: rgb(247, 208, 162);
+    border-left: 1px solid black;
+
 }
