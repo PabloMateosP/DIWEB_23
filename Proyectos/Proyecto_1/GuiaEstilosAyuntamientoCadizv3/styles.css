@@ -26,6 +26,7 @@ h1 {
     height: 100vh; /*View port height*/
     overflow: auto;
     padding: 10px;
+    font-family: Consolas, serif;
 
     background-color: rgb(252, 202, 126);
 }
@@ -293,7 +294,7 @@ h1 {
     align-items: center;
 }
 
-/*STYLES para página colores*/
+/*STYLES para página tipografia*/
 /*----------------------------------------------------------*/
 .divCabeceraTipografia {
     margin: 5px;
@@ -359,4 +360,17 @@ h1 {
 
     
     background-color: #e0d786;
+}
+
+#FraseRoboto{
+    font-family: Roboto, sans-serif;
+}
+#FraseConsolas{
+    font-family: 'Times New Roman', Times, serif;
+}
+#FraseRockwell{
+    font-family:'Rockwell';
+}
+#FraseHelvetica{
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica
 }
