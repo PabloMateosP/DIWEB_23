@@ -1,0 +1,9 @@
+table{ /* Especificidad de etiqueta HTML */
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    
+
+#table_row--underlined {
+    border-bottom: 2px solid black;
+}
