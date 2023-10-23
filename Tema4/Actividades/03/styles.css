@@ -1,0 +1,47 @@
+table { /* Especificidad de etiqueta HTML */
+    border-collapse: collapse;
+
+    width: 200px;
+    height: 200px;
+}
+    
+
+#table_row--underlined {
+    border-bottom: 2px solid black;
+}
+
+#table_row--vertical-line {
+    border-right: 2px solid black;
+}
+
+#table_row--horizontal-line {
+    border-bottom: 1px solid grey;
+}
+
+#table-row--end-line{
+    border-right: 1px solid gray;
+}
+
+.row__td--right-bottom {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.row__td--bottom {
+    border-bottom: 1px solid gray;
+}
+.row__td--right {
+    border-right: 1px solid gray;
+}
+
+h4 {
+    text-align: center;
+    color: blue;
+}
+
+footer {
+    text-align: center;
+}
+
+b {
+    color: red;
+}
