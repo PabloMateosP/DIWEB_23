@@ -7,3 +7,14 @@ table{ /* Especificidad de etiqueta HTML */
 #table_row--underlined {
     border-bottom: 2px solid black;
 }
+
+.row__td--right-bottom {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.row__td--bottom {
+    border-bottom: 1px solid gray;
+}
+.row__td--right {
+    border-right: 1px solid gray;
+}
