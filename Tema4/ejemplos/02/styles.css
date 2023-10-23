@@ -1,6 +1,9 @@
-table{ /* Especificidad de etiqueta HTML */
+table { /* Especificidad de etiqueta HTML */
     border: 1px solid black;
     border-collapse: collapse;
+
+    width: 200px;
+    height: 200px;
 }
     
 
@@ -17,4 +20,21 @@ table{ /* Especificidad de etiqueta HTML */
 }
 .row__td--right {
     border-right: 1px solid gray;
+}
+
+h4 {
+    color: greenyellow;
+}
+
+caption {
+    font-size: medium;
+}
+
+tr th { /* Damos herencia */
+    width: 20px;
+}
+
+tr th:nth-child(1){
+    width: 10px;
+    background-color: blueviolet;
 }
