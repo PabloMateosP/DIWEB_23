@@ -1,0 +1,41 @@
+h1, p, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rebeccapurple;
+}
+
+div p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rosybrown;
+}
+
+div > p{
+    color: aquamarine;
+}
+
+.cuerpo_divPrueba--green{
+    text-align: center;
+    color: cadetblue;
+    background-color: green;
+    margin: 20px;
+    
+    border: 1px solid black;
+    padding: 10px;
+
+    height: 50px;
+    width: 100px;
+}
+.cuerpo_divPrueba--pink{
+    position: relative;
+    text-align: center;
+    color: pink;
+    background-color: darkmagenta;
+    margin: 20px;
+    top:10px;
+    left: 30px;
+}
+.cuerpo_divPrueba--violet{
+    text-align: center;
+    color: cadetblue;
+    background-color: pink;
+    
+}
