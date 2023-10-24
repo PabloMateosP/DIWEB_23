@@ -45,3 +45,75 @@ footer {
 b {
     color: red;
 }
+
+/*Creamos el css para la segunda tabla*/
+
+.table2{
+    width: 390px;
+    height: 500px;
+    border-collapse: collapse;
+}
+
+.tr--efectividad{
+    border-bottom: 2px solid black;
+    background-color: rgb(207, 0, 0);
+}
+.tr--acero{
+    background-color: #878787;
+}
+.tr--volador{
+    background-color: #4281c9;
+}
+.tr--agua{
+    background-color: #331ac5;
+}
+.tr--hielo{
+    background-color: #60dbf8;
+}
+
+.tr--planta{
+    background-color: #287410;
+}
+.tr--bicho{
+    background-color: #58a332;
+}
+.tr--electrico{
+    background-color: #d8ec2d;
+}
+.tr--normal{
+    background-color: #fce6c0;
+}
+.tr--roca{
+    background-color: #ca8e42;
+}
+.tr--tierra{
+    background-color: #c97815;
+}
+.tr--fuego{
+    background-color: #f88c0a;
+}
+.tr--lucha{
+    background-color: rgb(250, 38, 38);
+}
+.tr--hada{
+    background-color: rgb(255, 187, 249);
+}
+.tr--psiquico{
+    background-color: #d85449;
+}
+.tr--veneno{
+    background-color: #f180d3;
+}
+.tr--dragon{
+    background-color: #c177c8;
+}
+.tr--fantasma{
+    background-color: #6c2f85;
+}
+.tr--siniestro{
+    background-color: #6b3340;
+}
+
+
+
+
