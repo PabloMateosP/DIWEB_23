@@ -48,3 +48,32 @@ Interpretes html
     <th> --> cabecera (table head)
     <caption> --> añadir titulo a la tabla 
     
+------------
+SELECTORES DESCENDIENTES
+
+div p { <-- se le da el color rojo a los diferentes p dentro del div
+    color: red;
+}
+
+div > p { <-- se le da el color azul a un hijo directo 
+    color: blue;
+}
+
+------------
+
+position: absolute; // Respecto al último elemento posicionado 
+
+Ejemplo: tenemos un body posicionado en una parte, si después creamos 
+otro elemnto después del body con position absolute nuestro elemento se referenciará 
+del body anteriormente colocado. 
+
+position: relative; // Respecto a su posición original 
+
+position: fixed; // Mantiene el elemento en posición fijo en la posición dada
+
+///////////////////////////
+// top right left bottom //
+///////////////////////////
+
+
+[ z-index: <-- funciona sobre el eje z para subir un elemento por encima de otro ]
