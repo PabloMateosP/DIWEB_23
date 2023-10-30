@@ -77,3 +77,15 @@ position: fixed; // Mantiene el elemento en posición fijo en la posición dada
 
 
 [ z-index: <-- funciona sobre el eje z para subir un elemento por encima de otro ]
+
+------------
+
+display: block;
+
+display: inline; --> no se pueden redimensionar
+
+display: inline-block;
+
+display: grid; --> se crea un contenedor cuadrícula para organizar los elementos en una estructura bidimensional.
+
+display: flex;

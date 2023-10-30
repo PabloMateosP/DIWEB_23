@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+}
+
+.body__main {
+    width: 100%; /*Unidad de medida % -> Medida que toma de referencia el padre directo*/
+    height: auto; /*Unidad de medida auto -> Medida que se adapta al contenido*/
+
+    background-color: black;
+}
+
+
+/*EJERCICIO DE SITUAR caja EN MUCHAS POSICIONES DIFERENTES*/
+.main__section {
+    position: relative;
+    height: 33vh; /*Unidad de medida vh -> Medida que toma de referencia el Viewport Height*/
+}
+
+.section__caja {
+    height: 50px;
+    width: 50px;
+
+    max-height: 100%;
+    max-width: 50px;
+}
+
+/*Linea de Ejemplo*/
+/*--------------------------------------------------------------------*/
+.main__section--ejemplo {
+    background-color: yellowgreen;
+}
+
+.section__caja--ejemplo-0 {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+}
+.section__caja--ejemplo-1 {
+    position: absolute;
+    top: 0;
+    background-color: lightcoral ;
+}
+.section__caja--ejemplo-2 {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: lightseagreen;
+}
+
+
+/*Primera línea*/
+/*--------------------------------------------------------------------*/
+.main__section--aqua {
+    background-color: aqua;
+}
+
+.section__caja--1-0 {
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+
+}
+.section__caja--1-1 {
+    background-color: brown;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+.section__caja--1-2 {
+    background-color: beige;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+
+
+/*Segunda línea*/
+/*--------------------------------------------------------------------*/
+.main__section--brown {
+    background-color: gainsboro;
+}
+
+.section__caja--2-0 {
+    background-color: blue;
+}
+.section__caja--2-1 {
+    background-color: rgb(205, 50, 182);
+}
+.section__caja--2-2 {
+    background-color: greenyellow;
+}
+
+/*Tercera línea*/
+/*--------------------------------------------------------------------*/
+.main__section--blueviolet {
+    background-color: blueviolet;
+}
+
+.section__caja--3-0 {
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    bottom: 80%;
+}
+.section__caja--3-1 {
+    background-color: yellow ;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+.section__caja--3-2 {
+    background-color: blue;
+    position: absolute;
+    bottom: 20%;
+    top: 80%;
+}
+
+/*Cuarta línea*/
+/*--------------------------------------------------------------------*/
+.main__section--green {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__caja--4-0 {
+    background-color: red;
+}
+.section__caja--4-1 {
+    background-color: white ;
+}
+.section__caja--4-2 {
+    background-color: red;
+}
+
+
+/*Quinta línea*/
+/*--------------------------------------------------------------------*/
+.main__section--blue {
+    background-color: blue;
+}
+
+.section__caja--5-0 {
+    background-color: red;
+}
+.section__caja--5-1 {
+    background-color: white;
+}
+.section__caja--5-2 {
+    background-color: rgb(225, 255, 0);
+}
+
+/*Sexta línea*/
+/*--------------------------------------------------------------------*/
+.main__section--orange {
+    background-color: orange;
+    display: flex;
+}
+
+.section__caja--6-0 {
+    background-color: black;
+}
+.section__caja--6-1 {
+    background-color: white;
+}
+.section__caja--6-2 {
+    background-color: red;
+}
+
+/*Séptima línea*/
+/*--------------------------------------------------------------------*/
+.main__section--red {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.section__caja--7-0 {
+    background-color: green;
+}
+.section__caja--7-1 {
+    background-color: white;
+}
+.section__caja--7-2 {
+    background-color: green;
+}
+
+/*Octava línea*/
+/*--------------------------------------------------------------------*/
+.main__section--black {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.section__caja--8-0 {
+    background-color: indigo;
+}
+.section__caja--8-1 {
+    background-color: pink;
+}
+.section__caja--8-2 {
+    background-color: wheat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,45 @@
+.principalSection {
+    
+    background-color: #0f1f2b;
+
+    position: relative;
+    top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.principalSection-firstDiv {
+
+    position: relative;
+    
+    height: 50px;
+
+    background-color: darkblue;
+}
+
+.principalSection-secondDiv {
+
+    position: absolute;
+    
+    height: 50px;
+
+    top: 20px;
+    left: 20px;
+
+    background-color: lightgreen;
+}
+
+.principalSection-thirdDiv {
+   
+    height: 50px;
+
+    position: relative;
+
+    top: 20px;
+    left: 20px;
+
+    background-color: deeppink;
+}
