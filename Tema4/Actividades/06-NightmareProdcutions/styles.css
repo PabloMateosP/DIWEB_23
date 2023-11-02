@@ -16,6 +16,7 @@ Tipografías
 3. Noto Serif Japanese --> Textos (p...etc)
 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap");
+
 @font-face {
   font-family: "ZombieHolocaust";
   src: url("Fonts/Zombie_Holocaust.ttf") format("truetype");
@@ -75,7 +76,8 @@ div {
   background-color: #ff6600;
   transform: scale(1.05);
 
-  font-size: 1.2em; /*em es una medida que toma como referencia el font-size del html*/
+  font-size: 1.2em;
+  /*em es una medida que toma como referencia el font-size del html*/
 }
 
 #zonaTitulo__logo img {
@@ -86,30 +88,109 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color: #FFFFFF
-  ;
+  background-color: #FFFFFF;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /*Establecemos aire entre elementos*/
+  gap: 10px;
+  /*Establecemos aire entre elementos*/
 }
 
-.header__zonaNavegacion a{
-    text-decoration: none; /*Para quitar el underline*/
-    color: #330033;
+.header__zonaNavegacion a {
+  text-decoration: none;
+  /*Para quitar el underline*/
+  color: #330033;
 }
 
-.zonaNavegacion__div{
-    padding: 5px;
-    transition: 0.1s ease-out;
+.zonaNavegacion__div {
+  padding: 5px;
+  transition: 0.1s ease-out;
 }
 
-.zonaNavegacion__div:hover{
-    border-bottom: 3px solid #ff6600;
-    border-radius: 5px;
+.zonaNavegacion__div:hover {
+  border-bottom: 3px solid #ff6600;
+  border-radius: 5px;
 }
 
-.zonaNavegacion__div h3{
-    margin: 0;
+.zonaNavegacion__div h3 {
+  margin: 0;
+}
+
+.zonaMain {
+
+  margin-top: 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-auto-rows: minmax(200px, auto);
+
+  /*  */
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.main_zonaImagen {
+
+  grid-column: 2 / 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main_zonaImagen img {
+
+  width: auto;
+  /* El porcentaje se refiere al tamaño del contenedor */
+  height: 300px;
+
+  transition: 0.1s ease-out;
+
+}
+
+.main_zonaImagen img:hover {
+
+  transform: scale(1.03);
+  border: 0px solid #1b011b;
+
+}
+
+.main_zonaDescripcion {
+
+  grid-column: 6 / 12;
+
+  border-left: 6px solid #1b011b;
+
+  padding: 10px;
+
+}
+
+.zonaDescripcion__actores-nota {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores {  
+  grid-column: 1;
+
+}
+
+.actores-nota__nota {  
+  grid-column: 2;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#nota__score {
+  font-family: "ZombieHolocaust", sans-serif;
+  font-size: 5em;
+  color: #1b011b;
 }
