@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ef5350;
+}
+
+.header__zonaTitulo {
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#zona__logo img {
+    width: 100px;
+    height: auto;
+}
+
+.header__zonaNavegacion {
+    height: 100%;
+    width: 50%;
+
+    overflow-x: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*Establecemos aire entre elementos*/
+}
+
+.header__zonaNavegacion a {
+    text-decoration: none;
+    color: white;
+}
+
+.zonaNavegacion__div {
+    padding: 13px;
+    
+    transition: 0.1s ease-out;
+}
+
+.zonaNavegacion__div:hover {
+    background-color: #c62828;
+}
+
+.zonaNavegacion__div h3 {
+    margin: 0;
+}
