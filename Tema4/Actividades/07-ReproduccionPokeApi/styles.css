@@ -1,6 +1,9 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
     margin: 0;
 }
+
 .header {
     height: 50px;
     display: flex;
@@ -10,12 +13,16 @@ body{
 
 .header__zonaTitulo {
     height: 100%;
-    width: 20%;
+    width: 10%;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.header__zonaTitulo:hover{
+    background-color: #c62828;
 }
 
 #zona__logo img {
@@ -23,27 +30,28 @@ body{
     height: auto;
 }
 
+
 .header__zonaNavegacion {
     height: 100%;
     width: 50%;
 
     overflow-x: auto;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /*Establecemos aire entre elementos*/
 }
 
 .header__zonaNavegacion a {
     text-decoration: none;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .zonaNavegacion__div {
     padding: 13px;
-    
+
     transition: 0.1s ease-out;
 }
 
