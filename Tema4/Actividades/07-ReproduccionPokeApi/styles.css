@@ -2,16 +2,21 @@
 
 body {
     margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #eff1f0;
 }
 
 .header {
     height: 50px;
     display: flex;
+    
+    align-items: center;
     justify-content: space-around;
+
     background-color: #ef5350;
 }
 
-.header__zonaTitulo {
+.header__Titulo {
     height: 50px;
     width: 10%;
 
@@ -21,46 +26,57 @@ body {
     gap: 10px;
 }
 
-.header__zonaTitulo:hover {
+.zona__logo img {
+    
+    height: 42px;
+
+    padding-inline-start: 5px;
+
+}
+
+.header__Titulo:hover {
     background-color: #c62828;
 }
 
-#zona__logo img {
-    width: 100px;
-    height: auto;
+.header__zonaTitulo {
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 50px;
 }
 
-
-.header__zonaNavegacion {
-    height: 50px;
-    width: 50%;
-
-    overflow-x: auto;
-
+.header__Nav {
+    height: 100%;
     display: flex;
+
     justify-content: center;
     align-items: center;
-    gap: 10px;
+
+    gap: 5px;
+    margin-right: 50px;
 }
 
-.header__zonaNavegacion a {
+.header__Nav a {
     text-decoration: none;
     color: white;
-    font-family: 'Lato', sans-serif;
 }
 
-.zonaNavegacion__div {
-    padding: 13px;
-
-    transition: 0.1s ease-out;
+.Nav__div {
+    padding: 15px;
 }
 
-.zonaNavegacion__div:hover {
-    background-color: #c62828;
+.Nav__div:hover {
+    background-color: #e94141;
+    text-decoration: underline;
+    color: white;
 }
 
-.zonaNavegacion__div h3 {
+.zonaNavegacion__div h4 {
     margin: 0;
+    font-weight: 400;
 }
 
 .container {

@@ -11,46 +11,39 @@
 <body>
 
     <header class="header">
-
-        <div class="header__zonaTitulo">
-            <div id="zona__logo">
+        <div class="header__Titulo">
+            <div class="zona__logo">
                 <a href="#">
-                    <img src="images/pokeapi.png"></img>
+                    <img src="images/pokeapi.png" alt="PokeApi" />
                 </a>
             </div>
         </div>
-
-        <div class="header__zonaNavegacion">
-
-            <div class="zonaNavegacion__div">
+        <div class="header__Nav">
+            <div class="Nav__div">
                 <a href="#">
-                    <h3>Home</h3>
+                    <h4>Home</h4>
                 </a>
             </div>
-            <div class="zonaNavegacion__div">
+            <div class="Nav__div">
                 <a href="#">
-                    <h3>About</h3>
+                    <h4>About</h4>
                 </a>
             </div>
-            <div class="zonaNavegacion__div">
+            <div class="Nav__div">
                 <a href="#">
-                    <h3>API v2</h3>
+                    <h4>API v2</h4>
                 </a>
             </div>
-            <div class="zonaNavegacion__div">
+            <div class="Nav__div">
                 <a href="#">
-                    <h3>GraphQL v1beta</h3>
+                    <h4>GraphQL v1beta</h4>
                 </a>
             </div>
-
         </div>
-
     </header>
 
     <body>
-
         <div class="container">
-
             <div class="body__div--nav">
                 <nav>
                     <h3>Contents</h3>
@@ -61,11 +54,16 @@
                     <a href="#slack">Slack</a>
                     <br>
                     <a href="#wrapper">Wrapper Libreries</a>
+                    <a>
+                        <hr />
+                        <a href="#resourcePag">Resource Lists/Pagination</a>
+                        <hr />
+                    </a>
                 </nav>
             </div>
 
             <div class="body__div--cont">
-                <h1 id="informacion">Information</h1>
+                <h1 id="info">Information</h1>
 
                 <p>
                     This is a consumption-only API — only the HTTP GET method is
@@ -79,7 +77,7 @@
                     hosting costs.
                 </p>
 
-                <h1 id="politica">Fair Use Policy</h1>
+                <h1 id="fair">Fair Use Policy</h1>
 
                 <p>
                     PokéAPI is free and open to use. It is also very popular. Because of
@@ -112,58 +110,70 @@
                     experience
                 </p>
 
-                <h1 id="lista">Wrapper Libreries</h1>
+                <h1 id="wrapper">Wrapper Libreries</h1>
 
-                <strong>
-                    <ul>
-                        <li><strong>Node Server-side with auto caching</strong>: <a
-                                href="https://github.com/PokeAPI/pokedex-promise-v2" rel="nofollow">Pokedex Promise
-                                v2</a> by Thomas Asadurian and Alessandro Pezzé</li>
-                        <li><strong>Browser-side with auto caching</strong>: <a
-                                href="https://github.com/PokeAPI/pokeapi-js-wrapper"
-                                rel="nofollow">pokeapi-js-wrapper</a> by Alessandro Pezzé</li>
-                        <li><strong>Python 3 with auto caching</strong>: <a
-                                href="https://github.com/GregHilmes/pokebase" rel="nofollow">PokeBase</a> by Greg Hilmes
-                        </li>
-                        <li><strong>Python 2/3 with auto caching</strong>: <a href="https://github.com/PokeAPI/pokepy"
-                                rel="nofollow">Pokepy</a> by Paul Hallett</li>
-                        <li><strong>Kotlin (and Java)</strong>: <a href="https://github.com/PokeAPI/pokekotlin"
-                                rel="nofollow">PokeKotlin</a> by sargunster</li>
-                        <li><strong>Java (Spring Boot) with auto caching</strong>: <a
-                                href="https://github.com/SirSkaro/pokeapi-reactor" rel="nofollow">pokeapi-reactor</a> by
-                            Benjamin Churchill</li>
-                        <li><strong>.NET (C#, VB, etc)</strong>: <a href="https://gitlab.com/PoroCYon/PokeApi.NET"
-                                rel="nofollow">PokeApi.NET</a> by PoroCYon</li>
-                        <li><strong>.NET Standard</strong>: <a href="https://github.com/mtrdp642/PokeApiNet"
-                                rel="nofollow">PokeApiNet</a> by mtrdp642</li>
-                        <li><strong>Swift</strong>: <a href="https://github.com/kinkofer/PokemonAPI"
-                                rel="nofollow">PokemonAPI</a> by kinkofer</li>
-                        <li><strong>PHP</strong>: <a href="https://github.com/danrovito/pokephp"
-                                rel="nofollow">PokePHP</a> by Dan Rovito</li>
-                        <li><strong>PHP</strong>: <a href="https://github.com/lmerotta/phpokeapi"
-                                rel="nofollow">PHPokéAPI</a> by lmerotta</li>
-                        <li><strong>Ruby</strong>: <a href="https://github.com/rdavid1099/poke-api-v2"
-                                rel="nofollow">Poke-Api-V2</a> by rdavid1099</li>
-                        <li><strong>Go</strong>: <a href="https://github.com/mtslzr/pokeapi-go"
-                                rel="nofollow">pokeapi-go</a> by mtslzr</li>
-                        <li><strong>Crystal</strong>: <a href="https://github.com/henrikac/pokeapi"
-                                rel="nofollow">pokeapi</a> by henrikac</li>
-                        <li><strong>Typescript with auto caching</strong>: <a
-                                href="https://github.com/Gabb-c/pokenode-ts" rel="nofollow">Pokenode-ts</a> by Gabb-c
-                        </li>
-                        <li><strong>Rust with auto caching</strong>: <a href="https://crates.io/crates/rustemon"
-                                rel="nofollow">Rustemon</a> by mlemesle</li>
-                        <li><strong>Asynchronous Python wrapper with auto caching</strong>: <a
-                                href="https://github.com/beastmatser/aiopokeapi" rel="nofollow">aiopokeapi</a> by
-                            beastmatser</li>
-                        <li><strong>Scala 3 with auto caching</strong>: <a
-                                href="https://github.com/juliano/pokeapi-scala" rel="nofollow">pokeapi-scala</a> by
-                            Juliano Alves</li>
-                        <li><strong>Elixir wrapper with auto caching</strong>: <a
-                                href="https://github.com/HenriqueArtur/Max-Elixir-PokeAPI"
-                                rel="nofollow">Max-Elixir-PokeAPI</a> by Henrique Artur</li>
-                    </ul>
-                </strong>
+
+                <ul>
+                    <li><strong>Node Server-side with auto caching</strong>: <a
+                            href="https://github.com/PokeAPI/pokedex-promise-v2" rel="nofollow">Pokedex Promise
+                            v2</a> by Thomas Asadurian and Alessandro Pezzé</li>
+                    <li><strong>Browser-side with auto caching</strong>: <a
+                            href="https://github.com/PokeAPI/pokeapi-js-wrapper" rel="nofollow">pokeapi-js-wrapper</a>
+                        by Alessandro Pezzé</li>
+                    <li><strong>Python 3 with auto caching</strong>: <a href="https://github.com/GregHilmes/pokebase"
+                            rel="nofollow">PokeBase</a> by Greg Hilmes
+                    </li>
+                    <li><strong>Python 2/3 with auto caching</strong>: <a href="https://github.com/PokeAPI/pokepy"
+                            rel="nofollow">Pokepy</a> by Paul Hallett</li>
+                    <li><strong>Kotlin (and Java)</strong>: <a href="https://github.com/PokeAPI/pokekotlin"
+                            rel="nofollow">PokeKotlin</a> by sargunster</li>
+                    <li><strong>Java (Spring Boot) with auto caching</strong>: <a
+                            href="https://github.com/SirSkaro/pokeapi-reactor" rel="nofollow">pokeapi-reactor</a> by
+                        Benjamin Churchill</li>
+                    <li><strong>.NET (C#, VB, etc)</strong>: <a href="https://gitlab.com/PoroCYon/PokeApi.NET"
+                            rel="nofollow">PokeApi.NET</a> by PoroCYon</li>
+                    <li><strong>.NET Standard</strong>: <a href="https://github.com/mtrdp642/PokeApiNet"
+                            rel="nofollow">PokeApiNet</a> by mtrdp642</li>
+                    <li><strong>Swift</strong>: <a href="https://github.com/kinkofer/PokemonAPI"
+                            rel="nofollow">PokemonAPI</a> by kinkofer</li>
+                    <li><strong>PHP</strong>: <a href="https://github.com/danrovito/pokephp" rel="nofollow">PokePHP</a>
+                        by Dan Rovito</li>
+                    <li><strong>PHP</strong>: <a href="https://github.com/lmerotta/phpokeapi"
+                            rel="nofollow">PHPokéAPI</a> by lmerotta</li>
+                    <li><strong>Ruby</strong>: <a href="https://github.com/rdavid1099/poke-api-v2"
+                            rel="nofollow">Poke-Api-V2</a> by rdavid1099</li>
+                    <li><strong>Go</strong>: <a href="https://github.com/mtslzr/pokeapi-go"
+                            rel="nofollow">pokeapi-go</a> by mtslzr</li>
+                    <li><strong>Crystal</strong>: <a href="https://github.com/henrikac/pokeapi"
+                            rel="nofollow">pokeapi</a> by henrikac</li>
+                    <li><strong>Typescript with auto caching</strong>: <a href="https://github.com/Gabb-c/pokenode-ts"
+                            rel="nofollow">Pokenode-ts</a> by Gabb-c
+                    </li>
+                    <li><strong>Rust with auto caching</strong>: <a href="https://crates.io/crates/rustemon"
+                            rel="nofollow">Rustemon</a> by mlemesle</li>
+                    <li><strong>Asynchronous Python wrapper with auto caching</strong>: <a
+                            href="https://github.com/beastmatser/aiopokeapi" rel="nofollow">aiopokeapi</a> by
+                        beastmatser</li>
+                    <li><strong>Scala 3 with auto caching</strong>: <a href="https://github.com/juliano/pokeapi-scala"
+                            rel="nofollow">pokeapi-scala</a> by
+                        Juliano Alves</li>
+                    <li><strong>Elixir wrapper with auto caching</strong>: <a
+                            href="https://github.com/HenriqueArtur/Max-Elixir-PokeAPI"
+                            rel="nofollow">Max-Elixir-PokeAPI</a> by Henrique Artur</li>
+                </ul>
+
+                <hr style="color: red;" />
+
+                <h1 id="resourcePag">Resource Lists/Pagination</h1>
+
+                <p>Calling any API endpoint without a resource ID or name will return a paginated list of available
+                    resources for that API. By default, a list "page" will contain up to 20 resources. If you would like
+                    to change this just add a 'limit' query parameter to the GET request, e.g. ?limit=60. You can use
+                    'offset' to move to the next page, e.g. ?limit=60&offset=60.</p>
+
+                <h1>Named</h1>
+                <button style="color: white; background-color: blue;">GET</button><p>https://pokeapi.co/api/v2/{endpoint}/</p>
+
             </div>
         </div>
     </body>
