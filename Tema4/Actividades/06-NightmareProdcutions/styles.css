@@ -1,3 +1,5 @@
+@import url(stylesDesktop.css);
+
 /*
 Colores Principales:
 #FF9900
@@ -28,6 +30,7 @@ Tipografías
 
 body {
   margin: 0;
+  background-color: rgb(13, 8, 14);
 }
 
 /*Ahora vamos a poner a cada elemento, una rtipografía especifica... sin tener en cuenta el font-weight*/
@@ -39,12 +42,14 @@ h5,
 h6,
 a {
   font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
 }
 
 p,
 span,
 div {
   font-family: "Noto Serif JP", serif;
+  color: #FFFFFF;
 }
 
 #tituloPagina {
@@ -55,12 +60,18 @@ div {
   height: 90px;
   display: flex;
   justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  z-index: 1;
+  position: sticky;
+
+  background-color: #2e1c2e;
 }
 
 .header__zonaTitulo {
   height: 100%;
   width: 20%;
-  background-color: #fff;
 
   border-radius: 20px;
 
@@ -73,7 +84,7 @@ div {
 }
 
 .header__zonaTitulo:hover {
-  background-color: #ff6600;
+  background-color: #978a8a;
   transform: scale(1.05);
 
   font-size: 1.2em;
@@ -88,7 +99,7 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color: #FFFFFF;
+  background-color: #2e1c2e;
 
   display: flex;
   justify-content: center;
@@ -100,7 +111,7 @@ div {
 .header__zonaNavegacion a {
   text-decoration: none;
   /*Para quitar el underline*/
-  color: #330033;
+  color: #ffffff;
 }
 
 .zonaNavegacion__div {
@@ -109,7 +120,7 @@ div {
 }
 
 .zonaNavegacion__div:hover {
-  border-bottom: 3px solid #ff6600;
+  border-bottom: 3px solid #ffffff;
   border-radius: 5px;
 }
 
@@ -155,7 +166,7 @@ div {
 .main_zonaImagen img:hover {
 
   transform: scale(1.03);
-  border: 0px solid #1b011b;
+  border: 0px solid #ffffff;
 
 }
 
@@ -163,7 +174,7 @@ div {
 
   grid-column: 6 / 12;
 
-  border-left: 6px solid #1b011b;
+  border-left: 6px solid #ffffff;
 
   padding: 10px;
 
@@ -174,14 +185,14 @@ div {
   grid-template-columns: 60% 40%;
 }
 
-.actores-nota__actores {  
+.actores-nota__actores {
   grid-column: 1;
 
 }
 
-.actores-nota__nota {  
+.actores-nota__nota {
   grid-column: 2;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -192,5 +203,41 @@ div {
 #nota__score {
   font-family: "ZombieHolocaust", sans-serif;
   font-size: 5em;
-  color: #1b011b;
+  color: #ffffff;
+}
+
+@media all and (max-width: 920px) {
+  .main_zonaImagen {
+
+    grid-column: 2 / 12;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .main_zonaDescripcion {
+
+    grid-column: 2 / 12;
+
+    border-top: 6px solid #ffffff;
+    border-left: 0px;
+
+    padding: 10px;
+
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header__zonaNavegacion {
+    width: 100%;
+  }
+
+  .header__zonaTitulo {
+    width: 100%;
+  }
+
 }
