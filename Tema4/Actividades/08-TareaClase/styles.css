@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap");
 
+@font-face {
+    font-family: "DolceVita";
+    src: url("Fonts/DolceVitaLight.ttf") format("truetype");
+}
+
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "DolceVita", sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: rgb(13, 8, 14);
+    background-color: rgb(240, 240, 240);
 }
 
 h1,
@@ -16,14 +21,14 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Roboto", sans-serif;
+    font-family: "DolceVita", sans-serif;
     color: #FFFFFF;
 }
 
 p,
 span,
 div {
-    font-family: "Noto Serif JP", serif;
+    font-family: "DolceVita", sans-serif;
     color: #FFFFFF;
 }
 
@@ -38,11 +43,15 @@ div {
     position: sticky;
 
     background-color: #2e1c2e;
+    background: linear-gradient(45deg, #6e3b6e, #000);
+    box-shadow: 0 2px 5px rgb(70, 18, 100);
+    
 }
 
 .header__zonaTitulo {
     height: 100%;
     width: 20%;
+
 
     border-radius: 20px;
 
@@ -54,16 +63,49 @@ div {
     transition: 0.2s linear;
 }
 
+.header__zonaTitulo:hover {
+    background-color: #978a8a;
+    transform: scale(1.05);
+
+    font-size: 1.2em;
+}
+
+#zonaTitulo__logo img {
+    width: 150px;
+    height: 100%;
+}
+
 .header__zonaNavegacion {
     height: 100%;
     width: 40%;
-    background-color: #2e1c2e;
+    background-color: transparent;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
+  .header__zonaNavegacion a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .zonaNavegacion__div {
+    padding: 5px;
+    transition: 0.1s ease-out;
+  }
+  
+  .zonaNavegacion__div:hover {
+    background-color: #978a8a;
+    transform: scale(1.05);
+
+    font-size: 1.2em;
+  }
+  
+  .zonaNavegacion__div h3 {
+    margin: 0;
+  }
 
 .zonaMain {
     margin-top: 20px;
@@ -79,7 +121,6 @@ div {
 }
 
 .main_zonaImagen {
-
     grid-column: 2 / 6;
 
     display: flex;
@@ -91,7 +132,7 @@ div {
 .main_zonaImagen img {
     width: 100%;
     height: 100%;
-  
+
     transition: 0.1s ease-out;
-  
-  }
+
+}
