@@ -10,8 +10,9 @@
 }
 
 body {
-    margin: 0;
-    background-color: rgb(240, 240, 240);
+    margin: 0px;
+    background-color: #DCDAC8;
+
 }
 
 .header {
@@ -112,7 +113,7 @@ body {
 
 .main_zonaImagen {
 
-    grid-column: 2 / 6;
+    grid-column: 2 / 7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +130,7 @@ body {
 .zonaDescripcion {
 
     margin-top: 10%;
-    
+
     padding: 10px;
     text-align: center;
     display: flex;
@@ -139,15 +140,47 @@ body {
 }
 
 .zonaDescripcion__texto {
+    grid-column: 2 / 7;
+}
 
-    grid-column: 2 / 6;
+#zonaDescripcion__texto__H1 {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    flex-wrap: wrap;
+    align-content: center;
 
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+
+}
+
+#zonaDescripcion__texto__p {
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+#zonaFooter {
+    margin: 0;
+
+    height: 100px;
+
+    text-align: center;
+    text-decoration: double;
+    font-size: 20px;
+    color: white;
+
+    border-top: 2px solid #6e3b6e;
+
+    background: linear-gradient(45deg, #6e3b6e, #000);
+    box-shadow: 0 -2px 5px rgb(70, 18, 100);
 }
 
 @media all and (max-width: 920px) {
@@ -160,8 +193,31 @@ body {
         width: 100%;
     }
 
+    .zonaNavegacion__div:hover {
+        transform: scale(0.9);
+
+        font-size: 1em;
+    }
+
     .header__zonaTitulo {
         width: 100%;
+    }
+
+    .header__zonaTitulo:hover {
+        transform: scale(0.9);
+
+        font-size: 1em;
+    }
+
+    #zonaDescripcion__texto__p {
+
+        font-size: 12px;
+
+    }
+
+    #zonaFooter {
+        font-size: 15px;
+        height: 75px;
     }
 
 }
