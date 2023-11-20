@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(100, 158, 42);
+}
+
+.header {
+  height: 10vh;
+  background-color: rgb(39, 58, 21);
+  background-color: hotpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__div {
+  height: 100%;
+  width: 3em;
+  color: lemonchiffon;
+}
+
+/*# sourceMappingURL=styles.css.map */

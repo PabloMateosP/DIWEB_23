@@ -1,3 +1,24 @@
+// Comentarios más fáciles 
+$color-primary: rgb(100, 158, 42);
+$color-secondary: rgb(39, 58, 21);
+
 body {
-    background-color: darkcyan;
+    background-color: $color-primary;
+}
+
+.header {
+    height: 10vh;
+    background-color: $color-secondary;
+
+    background-color:hotpink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header__div {
+        height: 100%;
+        width: 3em;
+        color: lemonchiffon;
+    }
 }
