@@ -1,0 +1,23 @@
+.header {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: black;
+  color: white;
+}
+.header .header__title__logo {
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+@media all and (max-width: 920px) {
+  .header .header__title__logo {
+    margin-left: 125px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
