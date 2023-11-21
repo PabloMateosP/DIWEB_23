@@ -1,22 +1,39 @@
-.header {
-  height: 100%;
-  width: 100%;
-  display: block;
-  background-color: black;
-  color: white;
-}
-.header .header__title__logo {
-  margin-left: 200px;
-  margin-bottom: 50px;
-}
-.header .header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
   margin: 0;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  grid-column: 3/11;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.nav-bar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid red;
+}
+.nav-bar div .a__active {
+  border-bottom: 2px solid red;
 }
 
 @media all and (max-width: 920px) {
