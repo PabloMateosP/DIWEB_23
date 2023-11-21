@@ -9,6 +9,11 @@
   margin-left: 200px;
   margin-bottom: 50px;
 }
+.header .header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body {
   margin: 0;

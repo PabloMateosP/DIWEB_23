@@ -1,0 +1,44 @@
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header h1 {
+  grid-column: 3/11;
+}
+
+.nav-bar {
+  background-color: #f0f0f0;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.nav-bar div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid #c9c739;
+}
+
+.main-content {
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main-content .main__publicacion {
+  grid-column: 3/11;
+}
+
+/*# sourceMappingURL=styles.css.map */
