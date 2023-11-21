@@ -30,6 +30,9 @@
 .nav-bar div a:hover {
   border-bottom: 2px solid #c9c739;
 }
+.nav-bar div .a__active {
+  border-bottom: 2px solid #c9c739;
+}
 
 .main-content {
   background-color: #ffffff;

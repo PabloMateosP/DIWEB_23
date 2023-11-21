@@ -53,6 +53,10 @@ $color-border-elemento-nav: #c9c739;
         a:hover {
             border-bottom: 2px solid $color-border-elemento-nav;
         }
+
+        .a__active {
+            border-bottom: 2px solid $color-border-elemento-nav;
+        }
     }
 }
 
