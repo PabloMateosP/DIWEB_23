@@ -1,0 +1,40 @@
+h1,h2,h3,h4 {
+    font-family: $tipografia-sans-serif;
+}
+
+
+.header {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    height: 10vh;
+    background-color: $color-fondo-header;
+    color: $color-letra-header;
+
+    .header__titulo {
+        grid-column: 2/9;
+        height: 100%;
+        background-color: deeppink;
+    }
+
+    .header__nav {
+        grid-column: 9/12;
+        height: 100%;
+        background-color: chartreuse;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .nav__span{
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+            margin: 2px;
+
+            background-color: rgb(179, 70, 70);
+        }
+    }
+}
