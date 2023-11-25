@@ -1,13 +1,3 @@
-@mixin establecer-grid($n-columnas: 12, $display_introducido: grid) {
-    @if $display_introducido ==flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } @else {
-        display: grid;
-        grid-template-columns: repeat($n-columnas, 1fr);
-    }
-}
 
 body {
     margin: 0;
@@ -17,7 +7,8 @@ body {
     background-color: black;
     color: white;
 
-    @include establecer-grid();
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 
     .header__title__logo {
         margin-top: 10px;
@@ -30,7 +21,9 @@ body {
 }
 
 .nav-bar {
-    @include establecer-grid(12, flex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -56,27 +49,41 @@ body {
 }
 
 .main-content-intro {
-    @include establecer-grid();
+    
+
     .main__introduccion {
         display: grid;
-        grid-column: 2/11;
+        grid-template-columns: repeat(12, 1fr);
+        
 
         h1 {
+            grid-column: 2/12;
             font-size: 2.75em;
             margin-bottom: 0;
         }
 
         h4 {
+            grid-column: 2/12;
             a {
                 color: red;
             }
         }
     }
+
     .main__intro__texto {
-        grid-column: 2/11;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        
         hr {
+            grid-column: 2/12;
             width: 90%;
             margin-top: 0;
+        }
+
+        .main__intro__texto__p {
+            grid-column: 3/11;
+            margin-top: 0;
+            width: 100%;
         }
     }
 }

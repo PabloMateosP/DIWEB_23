@@ -39,27 +39,34 @@ body {
   border-bottom: 2px solid red;
 }
 
-.main-content-intro {
+.main-content-intro .main__introduccion {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.main-content-intro .main__introduccion {
-  display: grid;
-  grid-column: 2/11;
-}
 .main-content-intro .main__introduccion h1 {
+  grid-column: 2/12;
   font-size: 2.75em;
   margin-bottom: 0;
+}
+.main-content-intro .main__introduccion h4 {
+  grid-column: 2/12;
 }
 .main-content-intro .main__introduccion h4 a {
   color: red;
 }
 .main-content-intro .main__intro__texto {
-  grid-column: 2/11;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 .main-content-intro .main__intro__texto hr {
+  grid-column: 2/12;
   width: 90%;
   margin-top: 0;
+}
+.main-content-intro .main__intro__texto .main__intro__texto__p {
+  grid-column: 3/11;
+  margin-top: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
