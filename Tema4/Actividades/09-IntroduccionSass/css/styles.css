@@ -62,12 +62,95 @@ body {
   grid-column: 2/12;
   width: 90%;
   margin-top: 0;
+  margin-bottom: 0;
 }
-.main-content-intro .main__intro__texto .div_main__intro__texto__p {
+.main-content-intro .main__intro__texto .div1_main__intro__texto__p {
+  display: grid;
   grid-column: 3/11;
   margin-top: 0;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  justify-items: flex-start;
+}
+.main-content-intro .main__intro__texto .main__intro__texto__img {
+  margin-top: 9px;
+  grid-column: 4/10;
+  width: 100%;
+}
+.main-content-intro .main__intro__texto #pieFotoPinocho {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 6/8;
+  font-size: 0.6em;
+  justify-items: center;
+  padding-left: 10%;
+}
+.main-content-intro .main__intro__texto #pieFotoPinocho a {
+  grid-column: 6/8;
+  color: red;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p {
+  display: grid;
+  grid-column: 2/12;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p p {
+  display: grid;
+  grid-column: 2/12;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p h1 {
+  display: grid;
+  grid-column: 2/12;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p #idImagenFerran {
+  display: grid;
+  grid-column: 3/6;
+  border-radius: 80px;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p .videoEmbebed {
+  display: grid;
+  height: 40vh;
+  width: 100%;
+  grid-column: 5/10;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p #idPieVideo {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 4/10;
+  font-size: 0.6em;
+  justify-items: center;
+  padding-left: 10%;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p #textDerechaFoto {
+  padding-left: 2px;
+  grid-column: 6/10;
+  text-align: start;
+  justify-content: end;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p #textFinal {
+  margin-top: 10px;
+  margin-bottom: 0;
+  grid-column: 3/10;
+  font-size: 0.6em;
+  justify-items: center;
+  padding-left: 10%;
+}
+.main-content-intro .main__intro__texto .div2_main__intro__texto__p #textFinal a {
+  color: red;
+}
+
+.footer__final {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3B3B3B;
+}
+.footer__final img {
+  margin-top: 10px;
+  grid-column: 2/11;
+}
+.footer__final p {
+  grid-column: 2/11;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

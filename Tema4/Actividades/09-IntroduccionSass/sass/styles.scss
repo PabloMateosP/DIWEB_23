@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
 }
@@ -49,12 +48,12 @@ body {
 }
 
 .main-content-intro {
-    
+
 
     .main__introduccion {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        
+
 
         h1 {
             grid-column: 2/12;
@@ -64,6 +63,7 @@ body {
 
         h4 {
             grid-column: 2/12;
+
             a {
                 color: red;
             }
@@ -73,19 +73,122 @@ body {
     .main__intro__texto {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        
+
         hr {
             grid-column: 2/12;
             width: 90%;
             margin-top: 0;
+            margin-bottom: 0;
         }
 
-        .div_main__intro__texto__p {
+        .div1_main__intro__texto__p {
+            display: grid;
             grid-column: 3/11;
             margin-top: 0;
             width: 100%;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            justify-items: flex-start;
         }
+
+        .main__intro__texto__img {
+
+            margin-top: 9px;
+            grid-column: 4/10;
+            width: 100%;
+
+        }
+
+        #pieFotoPinocho {
+            margin-top: 0;
+            margin-bottom: 0;
+            grid-column: 6/8;
+            font-size: 0.6em;
+            justify-items: center;
+            padding-left: 10%;
+
+            a {
+                grid-column: 6/8;
+                color: red;
+            }
+
+
+        }
+
+        .div2_main__intro__texto__p {
+
+            display: grid;
+            grid-column: 2/12;
+
+            p {
+                display: grid;
+                grid-column: 2/12;
+            }
+
+            h1 {
+                display: grid;
+                grid-column: 2/12;
+            }
+
+            #idImagenFerran {
+                display: grid;
+                grid-column: 3/6;
+                border-radius: 80px;
+            }
+
+            .videoEmbebed {
+
+                display: grid;
+                height: 40vh;
+                width: 100%;
+                grid-column: 5/10;
+            }
+
+            #idPieVideo {
+                margin-top: 0;
+                margin-bottom: 0;
+                grid-column: 4/10;
+                font-size: 0.6em;
+                justify-items: center;
+                padding-left: 10%;
+            }
+
+            #textDerechaFoto {
+                padding-left: 2px;
+                grid-column: 6/10;
+                text-align: start;
+                justify-content: end;
+            }
+
+            #textFinal {
+                margin-top: 10px;
+                margin-bottom: 0;
+                grid-column: 3/10;
+                font-size: 0.6em;
+                justify-items: center;
+                padding-left: 10%;
+                a{
+                    color: red;
+                }
+            }
+        }
+
+    }
+}
+
+.footer__final {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #3B3B3B;
+
+    img {
+        margin-top: 10px;
+        grid-column: 2/11;
+    }
+
+    p {
+        grid-column: 2/11;
+        color: white;
     }
 }
 
