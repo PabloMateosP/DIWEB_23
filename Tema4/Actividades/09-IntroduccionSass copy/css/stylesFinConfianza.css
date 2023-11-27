@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header .header__title__logo {
+  margin-top: 10px;
+  grid-column: 2/11;
+}
+.header .header__title__logo h1 {
+  font-size: 3em;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.nav-bar div {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+.nav-bar div a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+}
+.nav-bar div a:hover {
+  border-bottom: 2px solid red;
+}
+.nav-bar div .a__active {
+  border-bottom: 2px solid red;
+}
+
+.main-content-intro {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main-content-intro h1 {
+  grid-column: 2/12;
+  font-size: 2.75em;
+  margin-bottom: 0;
+}
+.main-content-intro h2 {
+  grid-column: 2/12;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main-content-intro h4 {
+  grid-column: 2/12;
+}
+.main-content-intro h4 a {
+  color: red;
+}
+.main-content-intro p {
+  grid-column: 2/12;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+}
+.main-content-intro hr {
+  grid-column: 2/12;
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-content-intro .main__img {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  grid-column: 4/10;
+  width: 100%;
+}
+.main-content-intro #pieFotoPinocho {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 6/8;
+  font-size: 0.6em;
+  justify-items: center;
+  padding-left: 10%;
+}
+.main-content-intro #pieFotoPinocho a {
+  grid-column: 6/8;
+  color: red;
+}
+.main-content-intro #textoIntroduccion {
+  grid-column: 3/11;
+  font-size: 1.25em;
+}
+.main-content-intro #idImagenFerran {
+  grid-column: 3/6;
+  border-radius: 80px;
+}
+.main-content-intro .videoEmbebed {
+  height: 45vh;
+  width: 100%;
+  grid-column: 4/10;
+}
+.main-content-intro #idPieVideo {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 4/10;
+  font-size: 0.65em;
+  justify-items: center;
+  padding-left: 10%;
+}
+.main-content-intro #textDerechaFoto {
+  margin-top: 75px;
+  margin-left: -150px;
+  grid-column: 6/10;
+}
+.main-content-intro #textFinal {
+  margin-top: 40px;
+  margin-bottom: 0;
+  grid-column: 3/11;
+  font-size: 0.9em;
+}
+.main-content-intro #textFinal a {
+  color: red;
+}
+
+.footer__final {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3B3B3B;
+}
+.footer__final img {
+  margin-top: 10px;
+  grid-column: 2/11;
+}
+.footer__final p {
+  grid-column: 2/11;
+  color: white;
+}
+
+/*# sourceMappingURL=stylesFinConfianza.css.map */
