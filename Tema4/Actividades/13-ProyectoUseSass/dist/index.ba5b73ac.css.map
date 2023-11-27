@@ -1,0 +1,1 @@
+{"mappings":"ACAA;;;;AAKA;;;;;;;;AASI;;;;;;AAMA;;;;;;;;;;AAUI","sources":["src/assets/styles/scss/main.scss","src/assets/styles/scss/_index.scss","src/assets/styles/scss/_variables.scss"],"sourcesContent":["@import \"variables\"; // @Use cuando funcione\r\n@import \"index\";",null,null],"names":[],"version":3,"file":"index.ba5b73ac.css.map","sourceRoot":"/__parcel_source_root/"}

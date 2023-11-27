@@ -1,0 +1,37 @@
+h1, h2, h3, h4 {
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+}
+
+.header {
+  color: #ccc;
+  background-color: #a8323c;
+  grid-template-columns: repeat(12, 1fr);
+  height: 10vh;
+  display: grid;
+}
+
+.header .header__titulo {
+  background-color: #ff1493;
+  grid-column: 2 / 9;
+  height: 100%;
+}
+
+.header .header__nav {
+  background-color: #7fff00;
+  flex-direction: column;
+  grid-column: 9 / 12;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.header .header__nav .nav__span {
+  background-color: #b34646;
+  border-radius: 2px;
+  width: 30px;
+  height: 4px;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=index.ba5b73ac.css.map */
