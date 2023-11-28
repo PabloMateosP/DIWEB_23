@@ -175,7 +175,7 @@ div {
   margin-top: 50px;
 
   width: 90vh; 
-  height: 100%;
+  height: auto;
 
 }
 
@@ -204,6 +204,29 @@ div {
 .equipo{
   grid-column: 10/12;
 
+}
+
+@media all and (max-width: 800px) {
+
+  #idImagenInicio {
+    grid-column: 2/12;
+
+  
+  }
+  
+  .destacado {
+    grid-column: 2/12;
+
+  }
+  .servicios{
+    grid-column: 2/12;
+  
+  }
+  
+  .equipo{
+    grid-column: 2/12;
+  
+  }
 }
 
 
