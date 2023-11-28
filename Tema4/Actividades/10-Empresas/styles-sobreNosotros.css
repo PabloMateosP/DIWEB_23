@@ -67,7 +67,8 @@ div {
   top: 0;
   position: sticky;
 
-  background-color:black;
+  background-color:#12141B ;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
 }
 
 .header__zonaTitulo {
@@ -103,7 +104,7 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color: black;
+  background-color:#12141B ;
 
   display: flex;
   flex-direction: row;
@@ -172,9 +173,10 @@ div {
 
 
   .footer {
-    background-color: grey; /* Color de fondo para el pie de página */
+    background-color: rgb(36, 106, 163); /* Color de fondo para el pie de página */
     color: white; /* Color del texto en el pie de página */
     padding: 10px;
+    box-shadow: 0px -5px 10px rgb(0, 0, 0);
 
     text-align: center;
 

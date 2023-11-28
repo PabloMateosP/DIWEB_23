@@ -30,7 +30,9 @@ Tipografías
 
 body {
   margin: 0;
-  background-color: rgb(13, 8, 14);
+  /* background-color: rgb(13, 8, 14); */
+  background: url(images/fotoFondo.jpg) no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -74,7 +76,8 @@ div {
   top: 0;
   position: sticky;
 
-  background-color:black;
+  background-color:#12141B ;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
 }
 
 .header__zonaTitulo {
@@ -110,7 +113,7 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color: black;
+  background-color: #12141B;
 
   display: flex;
   flex-direction: row;
@@ -149,14 +152,12 @@ div {
   grid-template-columns: repeat(12, 1fr);
   
 
-
   /*  */
   row-gap: 10px;
   column-gap: 10px;
 
   color: #FFFFFF;
-
-  font-size: 15px;
+  font-size: 1.12em;
 }
 
 .zonaMain__producto {
@@ -168,8 +169,18 @@ div {
   margin-right: 1em;
 }
 
-.destacado {
+#idImagenInicio {
   grid-column: 2/5;
+
+  margin-top: 50px;
+
+  width: 90vh; 
+  height: 100%;
+
+}
+
+.destacado {
+  grid-column: 6/8;
   column-count: 1; /* Asegúrate de restablecer la propiedad column-count a 1 */
   flex-direction: column; /* Cambia la dirección del flujo a columnas */
 }
@@ -186,20 +197,22 @@ div {
 }
 
 .servicios{
-  grid-column: 6/8
+  grid-column: 8/10
+
 }
 
 .equipo{
-  grid-column: 9/12;
+  grid-column: 10/12;
 
 }
 
 
 
 .footer {
-  background-color: grey; /* Color de fondo para el pie de página */
+  background-color: rgb(36, 106, 163); /* Color de fondo para el pie de página */
   color: white; /* Color del texto en el pie de página */
   padding: 10px;
+  box-shadow: 0px -5px 10px rgb(0, 0, 0);
 
   text-align: center;
 
