@@ -124,6 +124,7 @@ body {
 }
 .main-content-intro #textFinal a {
   color: red;
+  text-decoration: none;
 }
 
 .footer__final {
