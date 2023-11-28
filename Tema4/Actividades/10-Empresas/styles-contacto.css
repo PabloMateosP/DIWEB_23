@@ -106,7 +106,6 @@ div {
   background-color: black;
 
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -140,7 +139,8 @@ div {
   display: grid;
 
   grid-template-columns: repeat(12, 1fr);
-  
+
+  grid-auto-rows: minmax(200px, auto);
 
 
   /*  */
@@ -152,12 +152,17 @@ div {
   font-size: 15px;
 }
 
-.sobreNosotros{
+.zonaMain__producto {
+  grid-column: 3/11;
+}
 
-  grid-column: 2/12;
+.producto__seccion {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-  font-size: 15;
-
+.destacado{
+  grid-column: 2/5
 }
 
 .servicios{
@@ -171,17 +176,20 @@ div {
 
 
 
-  .footer {
-    background-color: grey; /* Color de fondo para el pie de página */
-    color: white; /* Color del texto en el pie de página */
-    padding: 10px;
+.footer {
+  background-color: grey; /* Color de fondo para el pie de página */
+  color: white; /* Color del texto en el pie de página */
+  padding: 10px;
 
-    text-align: center;
+  text-align: center;
+  
 
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  margin-top: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer__redes img {

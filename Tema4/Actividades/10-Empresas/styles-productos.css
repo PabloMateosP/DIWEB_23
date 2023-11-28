@@ -106,7 +106,6 @@ div {
   background-color: black;
 
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -140,7 +139,8 @@ div {
   display: grid;
 
   grid-template-columns: repeat(12, 1fr);
-  
+
+  grid-auto-rows: minmax(200px, auto);
 
 
   /*  */
@@ -161,21 +161,8 @@ div {
   margin-right: 1em;
 }
 
-.destacado {
-  grid-column: 2/5;
-  column-count: 1; /* Asegúrate de restablecer la propiedad column-count a 1 */
-  flex-direction: column; /* Cambia la dirección del flujo a columnas */
-}
-
-.destacado p {
-  margin-bottom: 15px;
-}
-
-/* Agrega un estilo específico para la imagen si es necesario */
-.destacado img {
-  width: 100%; /* Ajusta el ancho según tus necesidades */
-  height: auto;
-  margin-top: 15px; /* Espaciado entre el texto y la imagen */
+.destacado{
+  grid-column: 2/5
 }
 
 .servicios{
@@ -189,19 +176,21 @@ div {
 
 
 
-  .footer {
-    background-color: grey; /* Color de fondo para el pie de página */
-    color: white; /* Color del texto en el pie de página */
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+.footer {
+  background-color: grey; /* Color de fondo para el pie de página */
+  color: white; /* Color del texto en el pie de página */
+  padding: 10px;
 
-    align-self: flex-end;
-    width: 100%;
-    height: 10vh;
+  text-align: center;
+  
 
-    margin-top: 0;
+  margin-top: 0;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+    
 }
 
 .footer__redes img {
