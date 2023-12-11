@@ -154,26 +154,13 @@ div {
   font-size: 15px;
 }
 
-.zonaMain__producto {
-  grid-column: 3/11;
-}
-
-.producto__seccion {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.destacado{
-  grid-column: 2/5
-}
-
-.servicios{
-  grid-column: 6/8
-}
-
-.equipo{
-  grid-column: 9/12;
-
+.contacto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  left: 45vw;
 }
 
 

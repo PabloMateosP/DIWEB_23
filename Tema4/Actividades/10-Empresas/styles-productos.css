@@ -30,8 +30,16 @@ Tipografías
 
 body {
   margin: 0;
-  background-color: rgb(13, 8, 14);
-  overflow-x: hidden;
+  /* background-color: rgb(13, 8, 14); */
+  background: url(images/fotoFondo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body {
+  height: 100%;
 }
 
 /*Ahora vamos a poner a cada elemento, una rtipografía especifica... sin tener en cuenta el font-weight*/
@@ -105,9 +113,10 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color:#12141B ;
+  background-color: #12141B;
 
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -141,21 +150,24 @@ div {
   display: grid;
 
   grid-template-columns: repeat(12, 1fr);
-
-  grid-auto-rows: minmax(200px, auto);
-
+  
 
   /*  */
   row-gap: 10px;
   column-gap: 10px;
 
   color: #FFFFFF;
-
-  font-size: 15px;
+  
+  
+  font-size: 1.12em;
 }
 
 .zonaMain__producto {
   grid-column: 3/11;
+  
+  padding: 0 1em;
+ 
+  margin-bottom: 30px;
 }
 
 .producto__seccion {
@@ -163,17 +175,65 @@ div {
   margin-right: 1em;
 }
 
-.destacado{
-  grid-column: 2/5
+#idImagenInicio {
+  grid-column: 2/3;
+
+  width: 90vh;
+  height: auto;
+
+}
+
+.destacado {
+  
+  margin-top: 10px;
+  grid-column: 3/12;
+  padding-left: 10px;
+  column-count: 1; /* Asegúrate de restablecer la propiedad column-count a 1 */
+  flex-direction: column; /* Cambia la dirección del flujo a columnas */
+
+  font-size: 1.2em;
+}
+.destacado h2 {
+  text-align: center;
 }
 
 .servicios{
-  grid-column: 6/8
+  grid-row: 2;
+  grid-column: 2/12;
+
 }
 
 .equipo{
-  grid-column: 9/12;
+  grid-row: 3;
+  grid-column: 2/12;
 
+}
+
+@media all and (max-width: 1000px){
+
+  #idImagenInicio {
+    width: 95vw;
+    grid-column: 2/12;
+    grid-row: 1;
+
+  }
+  
+  .destacado {
+    grid-column: 2/12;
+    grid-row: 2;
+
+  }
+  .servicios{
+    grid-column: 2/12;
+    grid-row: 3;
+  
+  }
+  
+  .equipo{
+    grid-column: 2/12;
+    grid-row: 4;
+  
+  }
 }
 
 
@@ -181,19 +241,14 @@ div {
 .footer {
   background-color: rgb(36, 106, 163); /* Color de fondo para el pie de página */
   color: white; /* Color del texto en el pie de página */
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   box-shadow: 0px -5px 10px rgb(0, 0, 0);
 
   text-align: center;
-  
-
-  margin-top: 0;
 
   position: relative;
-  bottom: 0;
-  left: 0;
   width: 100%;
-    
 }
 
 .footer__redes img {

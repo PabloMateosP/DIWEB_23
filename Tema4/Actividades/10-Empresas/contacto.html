@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Evolution</title>
     <link rel="stylesheet" href="styles-contacto.css">
+    
 </head>
 <body>
 
@@ -47,30 +48,22 @@
     </header>
 
     <main class="zonaMain">
-        <section class="destacado">
-            <h2>Un mundo en transición</h2>
-            <p>Somos una empresa innovadora que impulsa la transformación digital. Nuestra misión es ofrecer soluciones avanzadas para el mundo moderno.</p>
-            <p>Explora nuestro sitio para descubrir cómo podemos ayudarte a evolucionar digitalmente.</p>
-            <section class="imagenDestacada">
-                <img src="images/imagen_destacada.png" style="width: 30px;" alt="Imagen Destacada">
-            </section>
-        </section>
-
-        <section class="servicios">
-            <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios para satisfacer las necesidades de tu empresa. Desde desarrollo de software hasta consultoría en transformación digital, estamos aquí para ayudarte a crecer.</p>
-            <ul>
-                <li>Desarrollo de Aplicaciones</li>
-                <li>Consultoría en Transformación Digital</li>
-                <li>Optimización de Procesos Empresariales</li>
-                <li>Seguridad Informática</li>
-            </ul>
-        </section>
-
-        <section class="equipo">
-            <h2>Nuestro Equipo</h2>
-            <p>Contamos con un equipo de profesionales apasionados y expertos en sus campos. Trabajamos juntos para llevar a cabo proyectos exitosos y superar las expectativas de nuestros clientes.</p>
-        </section>
+        <div class="contacto">
+            <h1>Contacto</h1>
+    
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </main>
 
 </body>

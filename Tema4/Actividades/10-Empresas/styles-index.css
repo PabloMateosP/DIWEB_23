@@ -203,9 +203,10 @@ div {
 
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 1100px){
 
   #idImagenInicio {
+    width: 95vw;
     grid-column: 2/12;
     grid-row: 1;
 
