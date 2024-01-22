@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="ARIA_logo.png" alt="Logo" class="logo">
+        <h1>ARIA</h1>
+    </header>
+    <br>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Principios</th>
+                <th>Pautas</th>
+                <th>Criterios de Conformidad A</th>
+                <th>Técnicas Suficientes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Perceptible</th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>1.1 - Proporcionar alternativas textuales</td>
+                        </tr>
+                        <tr>
+                            <td>1.2 - Medios tempodependientes</td>
+                        </tr>
+                        <tr>
+                            <td>1.3 - Crear contenido que pueda presentarse de diferentes formas</td>
+                        </tr>
+                        <tr>
+                            <td>1.4 - Facilitar a los usuarios ver y oír el contenido</td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="id_td_CriteriosDeConformidad">
+                    <table>
+                        <tr>
+                            <th>1.1.1 Contenido no textual</th>
+                            <td>A -> Todo contenido no textual que se presenta al usuario tiene una alternativa textual
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>1.2.2 Subtítulos (grabados)</th>
+                            <td>A -> Se proporcionan subtítulos para el contenido audio grabado</td>
+                        </tr>
+                        <tr>
+                            <th>1.3.1 Secuencia significativa</th>
+                            <td>A -> Cuando la secuencia en que se presenta el contenido afecta a su significado</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>1.1.1 -> Uso del atributo alt en el elemento img</td>
+                        </tr>
+                        <tr>
+                            <td>1.2.2 -> Mantener subtítulos para cada contenido con audio</td>
+                        </tr>
+                        <tr>
+                            <td>1.3.1 -> Añadir puntos de referencia como el parámetro role dentro de un 'div'</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>Operable</th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>2.1 - Proporcionar acceso a toda la funcionalidad mediante el teclado</td>
+                        </tr>
+                        <tr>
+                            <td>2.2 - Proporcionar a los usuarios el tiempo suficiente para leer y usar contenido</td>
+                        </tr>
+                        <tr>
+                            <td>2.3 - Programas adapatados para cubrir espasmos, convusiones ...</td>
+                        </tr>
+                        <tr>
+                            <td>2.4 - Proporcionar medios par ayudar a los usuarios a navegar y encontrarse en la web
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="id_td_CriteriosDeConformidad">
+                    <table>
+                        <tr>
+                            <th>2.1.1 Teclado</th>
+                            <td>A -> Toda la funcionalidad del contenido es operable a través de una interfaz de teclado
+                                sin que se requiera una determinada velocidad para cada pulsación individual de las
+                                teclas </td>
+                        </tr>
+                        <tr>
+                            <th>2.2.1 Tiempo ajustable</th>
+                            <td>A -> Para cada límite de tiempo impuesto por el contenido, se cumple al menos uno de los
+                                siguientes casos:
+                                Apagar: El usuario puede detener el límite de tiempo antes de alcanzar el límite de
+                                tiempo . Ajustar ...</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>2.1.1 -> proporcionar controladores de eventos activador por teclado para la correcta
+                                navegación</td>
+                        </tr>
+                        <tr>
+                            <td>2.2.1 -> Proporcionar una casilla de verificación en la primera página de un formulario
+                                de varias partes que permite a los usuarios solicitar un límite de tiempo de sesión más
+                                largo o ningún límite de tiempo de sesión.</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>Comprensible</th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>3.1 - Hacer que los contenidos textuales resulten legibles y comprensibles</td>
+                        </tr>
+                        <tr>
+                            <td>3.2 - Hacer que las páginas web aparezcan y operen de manera pedecible</td>
+                        </tr>
+                        <tr>
+                            <td>3.3 - Ayudar a los usuarios a evitar y corregir los errores</td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="id_td_CriteriosDeConformidad">
+                    <table>
+                        <tr>
+                            <th>3.1.1 Idioma de la página</th>
+                            <td>A -> El idioma predeterminado de cada página puede ser determinado por el software </td>
+                        </tr>
+                        <tr>
+                            <th>3.1.3 Palabras inusuales</th>
+                            <td>A -> Se proporcionan mecanismos para identificar las definiciones específicas de
+                                palabras o frases </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>3.1.1 -> Usar el atributo de atributo lenguaje en el elemento html</td>
+                        </tr>
+                        <tr>
+                            <td>3.1.3 -> Proporcionamos el significado de una palabra inusual o una frase específica
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>Robusto</th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                4.1 - Maximizar la compatibilidad con las aplicaciones de usuarios actuales y futuras
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="id_td_CriteriosDeConformidad">
+                    <table>
+                        <tr>
+                            <th>4.1.1 Procesamiento</th>
+                            <td>A -> En los contenidos implementados mediante el uso de lenguajes de marcas, los
+                                elementos tienen las etiquetas de apertura y cierre completas; los elementos están
+                                anidados de acuerdo a sus especificaciones; los elementos no contienen atributos
+                                duplicados y los ID son únicos </td>
+                        </tr>
+                        <tr>
+                            <th>4.1.2 Nombre, función, valor</th>
+                            <td>A -> Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado
+                                a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la
+                                función pueden ser determinados por software; los estados, propiedades y valores que
+                                pueden ser asignados por el usuario pueden ser especificados por software</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>4.1.1 -> validación de páginas web: El objetivo de esta técnica es evitar ambigüedades
+                                en las páginas web que a menudo resultan de un código que no se valida con
+                                especificaciones formales </td>
+                        </tr>
+                        <tr>
+                            <td>4.1.2 -> Usar aria-label para proporcionar una etiqueta invisible donde no se puede usar
+                                una etiqueta visible</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
