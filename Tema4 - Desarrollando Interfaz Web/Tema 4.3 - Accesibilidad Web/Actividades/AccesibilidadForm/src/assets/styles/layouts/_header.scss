@@ -1,0 +1,51 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  min-height: 10vh;
+
+  .header__zonaTitulo {
+    grid-column: 2/5;
+    
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2em;
+  }
+
+  .header__zonaNav {
+    grid-column: 5/12;
+
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid $ubriWeb-corporate;
+
+    a {
+      padding: 1.5em;
+      text-decoration: none;
+      color: black;
+      transition: all .2s ease-in;
+      
+    }
+
+    a:hover {
+      background-color: rgba(127, 255, 212, 0.507);
+    }
+  }
+}
+
+.img__panda--1 {
+  background-image: url("../images/panda_1.png"), url("../images/panda_3.png");
+  background-position: relative, relative;
+  background-size: contain;
+  background-position-x: left 100px, right 10px;
+  background-position-y: top 3px, top 12px;
+  background-repeat: no-repeat;
+}
+

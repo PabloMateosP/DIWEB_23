@@ -1,0 +1,88 @@
+
+.contacto__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__contact-form{
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 2em;
+
+        .contact-form__box {
+            padding-bottom: 1em;
+            position: relative;
+
+            .box__label {
+                position: absolute;
+                left: 10px;
+                top: 5px;
+                font-size: small;
+                transition: all .2s ease-in;
+            }
+
+            .box__input-field {
+                height: 2em;
+                width: 100%;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+            .box__input-field--text-area {
+                height: auto;
+                width: 100%;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .box__input-field:focus ~ .box__label,
+            .box__input-field:user-valid ~ .box__label{
+                font-size: xx-small;
+                padding-left: 2px;
+                padding-right: 2px;
+                top: -10px;
+            }
+            .box__input-field--text-area:focus ~ .box__label,
+            .box__input-field--text-area:user-valid ~ .box__label{
+                font-size: xx-small;
+                padding-left: 2px;
+                padding-right: 2px;
+                top: -10px;
+            }
+        }
+        
+        .contact-form__box--buttons {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 1em;
+            button {
+                padding: 10px;
+            }
+
+            .buttons__send {
+                background-color: rgb(102, 187, 102);
+                border: none;
+                border-radius: 5px;
+            }
+            .buttons__reset {
+                background-color: rgb(210, 108, 108);
+                border: none;
+                border-radius: 5px;
+            }
+
+            .buttons__reset:active {
+                background-color: rgb(204, 136, 136);
+            }
+            .buttons__send:active {
+                background-color: rgb(126, 185, 126);
+            }
+            
+        }
+    }
+}

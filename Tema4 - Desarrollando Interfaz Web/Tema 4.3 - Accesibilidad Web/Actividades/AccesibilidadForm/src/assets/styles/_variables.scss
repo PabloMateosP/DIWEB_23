@@ -1,0 +1,25 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$ubriWeb-corporate: #000078;
+$ubriWeb-masterbrand: #73edff;
+$ubriWeb-bg: color.scale($ubriWeb-masterbrand, $lightness: 70%);
+
+$mqMinWidth: 420px;
+
+@mixin iconos_pequenios($nombre_imagen: "error.png") {
+  background-image: url("../images/"+$nombre_imagen);
+  background-size: cover;
+  background-position: center;
+
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  right: 5px;
+  top: 1.5em;
+}
