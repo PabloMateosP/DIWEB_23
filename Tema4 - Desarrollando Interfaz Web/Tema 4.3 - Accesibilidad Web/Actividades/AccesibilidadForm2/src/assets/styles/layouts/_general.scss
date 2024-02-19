@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  color: black;
+}
+
+main {
+  min-height: 80vh;
+}
+
+header {
+  min-height: 10vh;
+}
+
+footer {
+  min-height: 10vh;
+}
+
+.color__red {
+  color: $color-red;
+}
+
+.color__green {
+  color: $color-green;
+}

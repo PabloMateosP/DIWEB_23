@@ -1,0 +1,80 @@
+.contacto__main {
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    label {
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    .input__text {
+        width: 50%;
+        height: 2em;
+
+        padding: 1em;
+
+        &:hover {
+           border: 3px solid $ubriWeb-corporate-3-scaled;  
+        }
+
+        &:focus {
+            border: 3px solid $ubriWeb-corporate-3;
+            outline: none;
+        }
+    }
+
+    .button__normal {
+
+        width: 10em;
+        height: 3em;
+        outline: none;
+        border: none;
+
+        font-weight: bold;
+    }
+
+    .button__normal--send {
+        background-color: $ubriWeb-corporate-4;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $ubriWeb-corporate-4-scaled;
+        }
+
+        &:active {
+            background-color: $ubriWeb-corporate-4-scaled;
+            border: 2px solid $ubriWeb-corporate-4;
+        }
+    }
+
+    
+    .main__formularioContacto {
+
+        grid-column: 2/3;
+        background-color: $ubriWeb-bg;
+        padding: 2em;
+        border-left: 1px solid $color-black;
+
+        .formularioContacto__group {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1em;
+        }
+        .formularioContacto__group--checkbox {
+            flex-direction: row;
+
+            label {
+                font-weight: normal;
+                padding-bottom: 0%;
+            }
+        }
+
+        .formularioContacto__group--botonera {
+            flex-direction: row;
+            align-items: center;
+        }
+
+    }
+
+}

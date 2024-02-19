@@ -1,0 +1,32 @@
+<form class="main__formularioContacto" action="">
+    <div role="region">
+        <p tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eius inventore explicabo voluptatum
+            distinctio
+            mollitia animi sint minus quia rem, maxime id, temporibus numquam repudiandae blanditiis debitis corrupti
+            deleniti? Voluptatibus?</p>
+    </div>
+
+
+    <div class="formularioContacto__group" role="region">
+        <label for="input__nombre" id="label__nombre" aria-label="input__nombre">Nombre <span class="color__red">*</span></label>
+        <input class="input__text" type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre" required aria-required="true" placeholder="Escriba aquí su nombre">
+    </div>
+    <div class="formularioContacto__group" role="region">
+        <label for="input__apellidos" id="label__apellidos" aria-label="label__apellidos">Apellidos</label>
+        <input class="input__text" type="text" name="input__apellidos" id="input__apellidos" aria-labelledby="label__apellidos" placeholder="Escriba aquí sus apellidos">
+    </div>
+
+    <div class="formularioContacto__group formularioContacto__group--checkbox" role="region">
+        <input type="checkbox" name="input__condiciones" id="input__condiciones">
+        <label for="input__condiciones">Acepto los términos y condiciones</label>
+    </div>
+
+    <div class="formularioContacto__group" role="region">
+        <p>Campos obligatorios <span class="color__red">*</span></p>
+    </div>
+
+    <div class="formularioContacto__group formularioContacto__group--botonera" role="region">
+        <button class="button__normal button__normal--send" role="button" type="submit">Enviar</button>
+    </div>
+
+</form>
