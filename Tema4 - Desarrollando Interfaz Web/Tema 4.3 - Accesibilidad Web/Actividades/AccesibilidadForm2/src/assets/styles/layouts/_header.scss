@@ -3,6 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
 
   min-height: 10vh;
+  background-color: $ubriWeb-masterbrand;
 
   .header__zonaTitulo {
     grid-column: 2/5;
