@@ -7,13 +7,15 @@ function onIniciar() {
     boton.addEventListener(  "click", ()=>{
       console.log("Click en boton " + i)
 
-      
+      botonesTab.forEach((botonFE, j)=> {
+        botonFE.classList.remove("activo");
+        bloquesTexto[j].classList.remove("activo");
+      });
 
-      boton.classList.add ("activo")
-    })
-  })
-
+      boton.classList.add("activo");
+      bloquesTexto[i].classList.add("activo");
+    });
+  });
 }
-
 
 window.onload = onIniciar();
