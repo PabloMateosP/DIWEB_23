@@ -1,0 +1,304 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<title>Tarea DIW</title>
+</head>
+
+<body>
+	<div id="arriba">
+		<div class="aviso">
+			El asterisco (<span>*</span>) indica un campo
+			obligatorio
+		</div>
+		<div id="teclas">
+			Informaci&oacute;n de teclas de acceso r&aacute;pido
+			<div id="caja" style="z-index: 1">
+				<p class="peque">
+					Antes de la tecla de atajo pulsar:<br />
+					<span class="neg">Firefox</span>: Mayusc. + Alt<br />
+					<span class="neg">Opera</span>: Mayusc. + Esc<br />
+					<span class="neg">Chrome, Safari e Iexplore</span>: Alt
+				</p>
+				<hr />
+				<ul>
+					<li>O - Nombre</li>
+					<li>P - Primer apellido</li>
+					<li>S - Segundo apellido</li>
+					<li>H - Sexo, Hombre</li>
+					<li>M - Sexo, Mujer</li>
+					<li>2 - Edad, Menor de 20</li>
+					<li>3 - Edad, De 20 a 35</li>
+					<li>5 - Edad, De 36 a 50</li>
+					<li>0 - Edad, Mayor de 50</li>
+					<li>A - Pa&iacute;s nacimiento</li>
+					<li>V - Enviar datos</li>
+					<li>B - Borrar datos</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="lineadatos">
+		<form action="#" method="post">
+			<div class="cuerpo">
+				<fieldset>
+					<legend class="legendBg">DATOS PERSONALES</legend>
+					<div class="lineadatos">
+						<div class="fizq">
+							<span>*&nbsp;</span>
+							<label for="nombre">N<span class="sobresale">o</span>mbre:
+							</label>
+							<input type="text" id="nombre" accesskey="o" maxlength="20" title="Nombre" />
+						</div>
+						<div class="fizq">
+							<span>*&nbsp;</span>
+							<label for="apellido1"><span class="sobresale">P</span>rimer apellido:
+							</label>
+							<input type="text" id="apellido1" accesskey="p" maxlength="40" title="Primer apellido" />
+						</div>
+						<div class="fizq">
+							<span>*&nbsp;</span>
+							<label for="apellido2"><span class="sobresale">S</span>egundo&nbsp;Apellido:
+							</label>
+							<input type="text" id="apellido2" accesskey="s" maxlength="40" title="Segundo apellido" />
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1" tabindex="0">
+							<span>*&nbsp;</span>Sexo:
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="sexo" id="hombre" accesskey="H" value="Hombre" title="Hombre" aria-labelledby="label_hombre"/>
+							<label for="hombre" id="label_hombre" name="label_hombre"><span class="sobresale">H</span>ombre</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="sexo" id="mujer" accesskey="M" value="Mujer" title="Mujer" />
+							<label for="mujer"><span class="sobresale">M</span>ujer</label>
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1" style="height: 25px">
+							<span>*&nbsp;</span>Grupo de edad:
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="edad" id="em20" value="Menor de 20" accesskey="2"
+								title="Menor de 20" />
+							<label for="em20">Menor de <span class="sobresale">2</span>0</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="edad" id="e2035" value="De 20 a 35" accesskey="3"
+								title="Entre 20 y 35" />
+							<label for="e2035">20-<span class="sobresale">3</span>5</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="edad" id="e3650" value="De 36 a 50" accesskey="5"
+								title="Entre 36 y 50" />
+							<label for="e3650">36-<span class="sobresale">5</span>0</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="edad" id="m50" value="Mayor de 50" accesskey="0"
+								title="Mayor de 50" />
+							<label for="m50">Mayor de 5<span class="sobresale">0</span></label>
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1">
+							<span>*&nbsp;</span><label for="pais" accesskey="a">P<span
+									class="sobresale">a</span>&iacute;s de
+								nacimiento:</label>
+						</div>
+						<div class="fizq a1">
+							<select size="1" name="pais" id="pais" title="Pa&iacute;s de nacimiento">
+								<option value="Alemania" label="Alemania" id="alemania">
+									Alemania
+								</option>
+								<option value="Bolivia" label="Bolivia" id="bolivia">
+									Bolivia
+								</option>
+								<option value="Canada" label="Canada" id="canada">
+									Canada
+								</option>
+								<option value="Dinamarca" label="Dinamarca" id="dinamarca">
+									Dinamarca
+								</option>
+								<option value="España" label="España" id="espana">
+									Espa&ntilde;a
+								</option>
+								<option value="Finlandia" label="Finlandia" id="finlandia">
+									Finlandia
+								</option>
+								<option value="Grecia" label="Grecia" id="grecia">
+									Grecia
+								</option>
+								<option value="Holanda" label="Holanda" id="holanda">
+									Holanda
+								</option>
+								<option value="Italia" label="Italia" id="italia">
+									Italia
+								</option>
+								<option value="Luxemburgo" label="Luxemburgo" id="luxemburgo">
+									Luxemburgo
+								</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="cuerpo">
+				<fieldset>
+					<legend class="legendBg">DATOS BANCARIOS</legend>
+					<div class="lineadatos">
+						<div class="fizq a1">
+							<label>C.C.C:</label>
+						</div>
+						<div class="fizq a1">
+							<input type="text" name="CCC" maxlength="20" id="ccc" title="C.C.C." />
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1">Tipo de cuenta:</div>
+						<div class="fizq a1">
+							<input type="radio" name="TIPOCUENTA" id="ahorro" value="Ahorro" title="De ahorro" />
+							<label>De ahorro</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="TIPOCUENTA" id="corriente" value="Corriente"
+								title="Cuenta Corriente" />
+							<label>Corriente</label>
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1">Tipo de sucursal:</div>
+						<div class="fizq a1">
+							<input type="radio" name="TIPOSUCURSAL" id="ccbanco" value="Banco" title="Banco" />
+							<label>Banco</label>
+						</div>
+						<div class="fizq a1">
+							<input type="radio" name="TIPOSUCURSAL" id="cccaja" value="Caja" title="Caja" />
+							<label>Caja</label>
+						</div>
+					</div>
+					<hr />
+					<div class="lineadatos">
+						<div class="fizq a1" style="height: 25px">
+							Servicios contratados:
+						</div>
+						<div class="fizq a1">
+							<input type="checkbox" id="nomina" name="Nomina" title="N&oacute;mina domiciliada" />
+							<label>N&oacute;mina domiciliada</label>
+						</div>
+						<div class="fizq a1">
+							<input type="checkbox" id="hipoteca" name="Hipoteca" title="Pr&eacute;stamo hipotecario" />
+							<label>Pr&eacute;stamo hipotecario</label>
+						</div>
+						<div class="fizq a1">
+							<input type="checkbox" id="personal" name="Personal" title="Pr&eacute;stamo personal" />
+							<label>Pr&eacute;stamo personal</label>
+						</div>
+						<div class="fizq a1">
+							<input type="checkbox" id="seguridad" name="Seguridad" />
+							<label>Caja de seguridad</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="cuerpo">
+				<fieldset>
+					<legend class="legendBg">OTROS DATOS DE INTERÉS</legend>
+					<div class="fizq a5" style="border-right: 2px solid #9e73b0">
+						<div class="lineadatos" style="margin-top: 0px">
+							<div class="fizq" style="margin-top: 0px">
+								Est&aacute; usted interesado en alguno de estos temas?
+							</div>
+						</div>
+						<div class="lineadatos">
+							<div class="fizq a2">
+								<input type="checkbox" name="Libros" id="libros" title="Libros" />
+								<label for="libros">Libros</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Viajes" id="viajes" title="Viajes" />
+								<label for="viajes">Viajes</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Informatica" id="informatica" title="Inform&aacute;tica" />
+								<label for="informatica">Inform&aacute;tica</label>
+							</div>
+						</div>
+						<div class="lineadatos">
+							<div class="fizq a2">
+								<input type="checkbox" name="Cursos" id="cursos" title="Cursos" />
+								<label for="cursos">Cursos</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Seguros" id="seguros" title="Seguros" />
+								<label for="seguros">Seguros</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Musica" id="musica" title="M&uacute;sica" />
+								<label for="musica">M&uacute;sica</label>
+							</div>
+						</div>
+						<div class="lineadatos">
+							<div class="fizq a2">
+								<input type="checkbox" name="Apuestas" id="apuestas" title="Apuestas" />
+								<label for="apuestas">Apuestas</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Idiomas" id="idiomas" title="Idiomas" />
+								<label for="idiomas">Idiomas</label>
+							</div>
+							<div class="fizq a2">
+								<input type="checkbox" name="Empleo" id="empleo" title="Empleo" />
+								<label for="empleo">Empleo</label>
+							</div>
+						</div>
+					</div>
+					<div class="fizq a3" style="margin-top: 0px; margin-left: 20px">
+						<div class="fizq">
+							<label for="otrostemas">Otros temas:</label>
+						</div>
+						<div class="fizq">
+							<textarea rows="3" cols="30" id="otrostemas" title="Otros temas de inter&eacute;s">
+																																																																																																																																																																																																																																																																																																																																																																																																								Escriba aqu&iacute; sus temas de inter&eacute;s</textarea>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div id="abajo">
+				<div class="aviso">
+					Los campos marcados con <span>*</span> son
+					obligatorios
+				</div>
+				<div id="zonabotones">
+					<input type="submit" value="Enviar datos del formulario" accesskey="v"
+						title="Enviar informaci&oacute;n" />
+					<input type="reset" value="Limpiar datos del formulario" accesskey="b" title="Borrar datos" />
+				</div>
+			</div>
+			<div id="pie">
+				<a href="http://validator.w3.org/check?uri=referer">
+					<img style="border: 0; width: 88px; height: 31px" src="img/valid-xhtml10.png"
+						alt="Documento v&aacute;lido XHTML 1.0 Transitional" />
+				</a>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border: 0; width: 88px; height: 31px" src="img/vcss.gif"
+						alt="Documento CSS V&aacute;lido" />
+				</a>
+				<a href="http://achecker.ca/checker/index.php">
+					<img style="border: 0; width: 88px; height: 31px" src="img/wcag1AA.gif"
+						alt="Nivel de accesibilidad doble A" />
+				</a>
+			</div>
+		</form>
+</body>
+
+</html>

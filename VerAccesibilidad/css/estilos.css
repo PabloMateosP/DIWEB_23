@@ -1,0 +1,186 @@
+/* Definici�n general para el documento */
+body { 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:1.00em;
+	background-color: #ffffff; 
+	color: purple;
+	text-decoration: none; 
+	margin:0px;
+	padding:0px;
+}
+
+/* Definici�n general para todas las capas */
+div {
+/*	margin-top: 10px; */
+}
+
+/* Definimos c�mo queremos mostrar los t�tulos de los fieldset */ 
+legend {
+	text-align: left;
+	font-size:1.60em;
+	padding-right:40px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border: 1px solid purple;
+	font-weight: bold;
+}
+
+.legendBg {
+		background-color: rgb(185, 103, 185);
+}
+
+/* Separamos los fieldset 20px por arriba */
+fieldset {
+	padding-top: 5px;
+	border: 1px solid purple;
+}
+
+/* Cuando nos situamos en uno de los tres fieldset */
+fieldset:hover{
+	background-color: #efe9f3;
+}
+
+/* L�neas de separaci�n entre las diferentes filas */
+hr{
+	width:75%;
+	alignment-adjust: middle;
+}
+/* Cajas para los textos informativos superiores */
+#arriba{
+	clear:both;
+	float:left;
+	top:0px;
+	left:0px;
+	width:95%;
+	border:2px dotted purple;
+	padding:0px 10px;
+	margin:0px 10px;
+}
+
+/* Caja para los textos informativos inferiores */
+#abajo{
+	clear:both;
+	float:left;
+	bottom:0px;
+	left:0px;
+	width:95%;
+	border:2px dotted purple;
+	padding:0px 10px;
+	margin:0px 10px;
+}
+
+/* Contenedor para los avisos */
+.aviso {
+	font-size:1em;
+	color: black;
+	float: left;
+	left: 0px;
+}
+
+/* Indicador para los campos obligatorios */
+/*
+.asterisco{
+	font-size:14pt;
+	font-weight:bold;
+	color: red;
+}*/
+
+/* Indicador para la letra del atajo  */
+.sobresale{
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+/* Contenedor informativo de atajos a la derecha */
+#teclas{
+	float:right; 
+	color:purple
+}
+
+/* Situaci�n del contenedor de la informaci�n de los atajos */
+#caja{
+	position:absolute; 
+	top:52px; 
+	right:10px; 
+	background-color:#cfc; 
+	border:2px dotted purple; 
+	text-align:left; 
+	font-family:verdana; 
+	font-size:11px; 
+	padding:10px 20px 10px 0px;
+}
+
+/* Situamos la capa 'caja' dentro de 'teclas' y la ocultamos */
+#teclas  #caja{
+	display:none; 
+	position:absolute; 
+	float:left;
+}
+
+/* Cuando situamos el cursor sobre esta capa se muestra la capa caja */
+#teclas:hover #caja{display:block}
+
+/* Letra peque�a para la informaci�n de las teclas de atajo */
+.peque{
+	font-size: smaller;
+	font-style: italic;
+	padding-left: 10px;
+}
+.peque .neg{
+	font-weight: bold;
+}
+/* Contenedor de cada una de las l�neas individuales de datos */
+.lineadatos{
+	clear:both;
+	float:left; 
+	width:100%;
+	margin:0px;
+	padding: 5px 0px;
+}
+
+/* Contenedor de cada uno de los fieldset */
+.cuerpo {
+	clear:both;
+	width: 97%; 
+	text-align: left;
+	padding:5px 10px;
+	margin-bottom:15px;
+}
+
+
+
+/* Capas contenedoras individuales */
+.fizq{
+	float:left; 
+	position:relative;
+	padding-right: 20px;
+	margin:0px;
+}
+
+/* Cuando nos situamos sobre uno de los campos */
+.fizq:hover{
+	background-color: #d1fafc;
+}
+/* Situamos los botones de env�o y borrado a la derecha */
+#zonabotones {
+	text-align: right;
+}
+
+/* Capa contenedora del final del documento */
+#pie{
+	float:left;
+	margin:12px 0px 0px 0px;
+	padding:0px;
+	width:100%;
+	text-align:center;
+}
+
+
+/* Tama�os de capas*/
+.a1{width:15%;}
+.a2{width:20%;}
+.a3{width:30%;}
+.a4{width:40%;}
+.a5{width:50%;}
+.a6{width:60%;}
+
