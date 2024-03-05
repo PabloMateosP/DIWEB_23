@@ -1,14 +1,11 @@
 .index__main {
-    
-
     .main__picture {
-
         overflow: hidden;
         max-height: 90vh;
 
         .img {
             width: 100%;
-            height: auto;   
+            height: auto;
         }
 
         .video {
@@ -18,11 +15,9 @@
 }
 
 .main__tabs {
-    
     padding: 1em;
 
     .tabs__botonesTab {
-
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -30,23 +25,23 @@
         .botonesTab__pestana {
             margin: 0 1em 0;
             padding: 1em;
-            
-            @include neo(1, 1em, 1em)
+
+            @include neo(1, 1em, 1em);
         }
 
         .botonesTab__pestana:hover {
-            background-color: $ubriWeb-corporate-hover;
-            transition: all 2s;
+            background: linear-gradient(to right, rgb(85, 18, 202), rgb(5, 5, 224), rgb(199, 3, 199));
+            transition: all 1s;
+            color: white;
         }
-
 
         .activo {
-            background-color: $ubriWeb-corporate;
+            background: linear-gradient(to right, rgb(24, 5, 56), rgb(2, 2, 143), purple);
+            color: white;
         }
-
     }
 
-    .tabs__contenedorTexto{
+    .tabs__contenedorTexto {
         position: relative;
         overflow: hidden;
         min-height: 20vh;
@@ -61,5 +56,52 @@
         .activo {
             opacity: 1;
         }
+    }
+}
+.main__acordeon {
+    padding: 1em;
+
+    h2,
+    p {
+        margin: 0;
+    }
+
+    .acordeon__divContenedor {
+        margin: 0 0 1em;
+
+        .divContenedor__titulo {
+            padding: 1rem;
+
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background: linear-gradient(to right, rgb(24, 5, 56), rgb(2, 2, 143), purple);
+
+            color: white;
+        }
+
+        .divContenedor__titulo:hover {
+            background: linear-gradient(to right, rgb(85, 18, 202), rgb(5, 5, 224), rgb(199, 3, 199));
+            transition: all 4s;
+            color: white;
+        }
+
+        .divContenedor__contenido {
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+
+            transition: all 0.5s ease;
+
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+        .divContenedor__contenido--activo {
+            padding: 1rem;
+            min-height: 4rem;
+            overflow: auto;
+        }
+
     }
 }
