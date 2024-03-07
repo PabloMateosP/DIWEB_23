@@ -1,0 +1,83 @@
+.proyectos__main {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .main__lightbox-proyectos {
+
+        width: 80%;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding: 1em;
+        margin: 1em 0 0;
+
+        .lightbox-proyectos__div-img{
+
+            background-color: blue;
+            overflow: hidden;
+
+            .div-img__img {
+                height: 20vh;
+                transform: scale(1.4);
+                transition: all 0.5s ease-in-out;
+
+                border-radius: 10px;
+            }
+
+            .div-img__img:hover{
+                transform: scale(1.1);
+            }
+
+        }
+
+    }
+
+    .main__lightbox-proyectos-selected {
+
+        opacity: 0;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #dfdede, $alpha: 0.97);
+
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .lightbox-proyectos-selected__boton{
+            margin: 0 0 1em;
+            background-color: #dfdede;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .lightbox-proyectos-selected__div-img{
+            img {
+                height: 80vh;
+                border-radius: 20px;
+                border: 4px solid black;
+                box-shadow: 10px;
+            }
+        }
+    }
+
+    .activo {
+        opacity: 1;
+        z-index: 2;
+    }
+
+}
