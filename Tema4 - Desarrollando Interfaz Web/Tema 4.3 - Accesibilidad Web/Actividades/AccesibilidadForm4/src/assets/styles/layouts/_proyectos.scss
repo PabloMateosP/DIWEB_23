@@ -1,0 +1,78 @@
+.proyectos__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .main__lightbox-proyectos {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    margin: 1em 0 0;
+
+    .ligthbox-proyectos__div-img {
+      background-color: cadetblue;
+      overflow: hidden;
+      flex-basis: 20%;
+
+      .div-img__img {
+        height: 20vh;
+        cursor: pointer;
+        transform: scale(1.4);
+        transition: all 0.5s ease;
+        //@include neo(1, 1em, 1em);
+      }
+
+      .div-img__img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .main__ligthbox-proyecto-selected {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+    
+    .ligthbox-proyecto-selected__boton {
+        margin: 0 0 1em;
+
+        height: 3rem;
+        width: 3.5rem;
+
+        cursor: pointer;
+
+        @include neo(2, .5em, .5em)
+    }
+
+    .ligthbox-proyecto-selected__div-img {
+      .div-img__img--lightbox {
+        height: 80vh;
+
+        
+      }
+    }
+  }
+
+  .activo {
+    opacity: 1;
+    z-index: 2;
+
+    transition: all 0.5s ease;
+  }
+}
